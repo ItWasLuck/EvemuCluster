@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AscentShared", "AscentShared\AscentShared.vcxproj", "{98124D24-27B9-48EB-AC5D-2DC15736282F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SystemNode", "SystemNode\SystemNode.vcxproj", "{69922A7F-4E8D-458E-A95B-D68AB8C28BCC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMZ Interface", "DMZ Interface\DMZ Interface.vcxproj", "{FC4DB38B-F691-4BB9-BF57-B68A08735902}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeController", "NodeController\NodeController.vcxproj", "{83551A9A-C7D8-4C4D-AF1D-BF0CF390AA41}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PacketRouter", "PacketRouter\PacketRouter.vcxproj", "{45E96709-3275-4BE9-A738-5B4EA63F4CA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrossNodeManager", "CrossNodeManager\CrossNodeManager.vcxproj", "{66FE3368-2F3A-4F29-8819-2BBA22098244}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogSystem", "LogSystem\LogSystem.vcxproj", "{6B3435C6-4D7C-40DE-BF9C-1AF468940293}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeCommon", "NodeCommon\NodeCommon.vcxproj", "{5557EC3A-A4AB-4815-93EC-DED64DFC8667}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98124D24-27B9-48EB-AC5D-2DC15736282F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98124D24-27B9-48EB-AC5D-2DC15736282F}.Debug|Win32.Build.0 = Debug|Win32
+		{98124D24-27B9-48EB-AC5D-2DC15736282F}.Release|Win32.ActiveCfg = Release|Win32
+		{98124D24-27B9-48EB-AC5D-2DC15736282F}.Release|Win32.Build.0 = Release|Win32
+		{69922A7F-4E8D-458E-A95B-D68AB8C28BCC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69922A7F-4E8D-458E-A95B-D68AB8C28BCC}.Debug|Win32.Build.0 = Debug|Win32
+		{69922A7F-4E8D-458E-A95B-D68AB8C28BCC}.Release|Win32.ActiveCfg = Release|Win32
+		{69922A7F-4E8D-458E-A95B-D68AB8C28BCC}.Release|Win32.Build.0 = Release|Win32
+		{FC4DB38B-F691-4BB9-BF57-B68A08735902}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC4DB38B-F691-4BB9-BF57-B68A08735902}.Debug|Win32.Build.0 = Debug|Win32
+		{FC4DB38B-F691-4BB9-BF57-B68A08735902}.Release|Win32.ActiveCfg = Release|Win32
+		{FC4DB38B-F691-4BB9-BF57-B68A08735902}.Release|Win32.Build.0 = Release|Win32
+		{83551A9A-C7D8-4C4D-AF1D-BF0CF390AA41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{83551A9A-C7D8-4C4D-AF1D-BF0CF390AA41}.Debug|Win32.Build.0 = Debug|Win32
+		{83551A9A-C7D8-4C4D-AF1D-BF0CF390AA41}.Release|Win32.ActiveCfg = Release|Win32
+		{83551A9A-C7D8-4C4D-AF1D-BF0CF390AA41}.Release|Win32.Build.0 = Release|Win32
+		{45E96709-3275-4BE9-A738-5B4EA63F4CA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45E96709-3275-4BE9-A738-5B4EA63F4CA8}.Debug|Win32.Build.0 = Debug|Win32
+		{45E96709-3275-4BE9-A738-5B4EA63F4CA8}.Release|Win32.ActiveCfg = Release|Win32
+		{45E96709-3275-4BE9-A738-5B4EA63F4CA8}.Release|Win32.Build.0 = Release|Win32
+		{66FE3368-2F3A-4F29-8819-2BBA22098244}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66FE3368-2F3A-4F29-8819-2BBA22098244}.Debug|Win32.Build.0 = Debug|Win32
+		{66FE3368-2F3A-4F29-8819-2BBA22098244}.Release|Win32.ActiveCfg = Release|Win32
+		{66FE3368-2F3A-4F29-8819-2BBA22098244}.Release|Win32.Build.0 = Release|Win32
+		{6B3435C6-4D7C-40DE-BF9C-1AF468940293}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B3435C6-4D7C-40DE-BF9C-1AF468940293}.Debug|Win32.Build.0 = Debug|Win32
+		{6B3435C6-4D7C-40DE-BF9C-1AF468940293}.Release|Win32.ActiveCfg = Release|Win32
+		{6B3435C6-4D7C-40DE-BF9C-1AF468940293}.Release|Win32.Build.0 = Release|Win32
+		{5557EC3A-A4AB-4815-93EC-DED64DFC8667}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5557EC3A-A4AB-4815-93EC-DED64DFC8667}.Debug|Win32.Build.0 = Debug|Win32
+		{5557EC3A-A4AB-4815-93EC-DED64DFC8667}.Release|Win32.ActiveCfg = Release|Win32
+		{5557EC3A-A4AB-4815-93EC-DED64DFC8667}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

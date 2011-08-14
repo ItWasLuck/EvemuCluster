@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98124D24-27B9-48EB-AC5D-2DC15736282F}</ProjectGuid>
+    <RootNamespace>AscentShared</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>G:\Evemu\Deps\zlib;G:\Evemu\Deps\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>AscentPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmysql.lib;zlib.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\Evemu\Deps\mysql\lib\opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ascent.h" />
+    <ClInclude Include="AscentConfig.h" />
+    <ClInclude Include="AscentPCH.h" />
+    <ClInclude Include="BufferPool.h" />
+    <ClInclude Include="ByteBuffer.h" />
+    <ClInclude Include="CallBack.h" />
+    <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Config\Config.h" />
+    <ClInclude Include="Config\ConfigEnv.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="CThreads.h" />
+    <ClInclude Include="Database\Database.h" />
+    <ClInclude Include="Database\DatabaseEnv.h" />
+    <ClInclude Include="Database\Field.h" />
+    <ClInclude Include="Database\MySQLDatabase.h" />
+    <ClInclude Include="Database\PostgresDatabase.h" />
+    <ClInclude Include="Database\SQLiteDatabase.h" />
+    <ClInclude Include="DebugTools.h" />
+    <ClInclude Include="Errors.h" />
+    <ClInclude Include="FastQueue.h" />
+    <ClInclude Include="HeapUtils\ContainersInl.h" />
+    <ClInclude Include="HeapUtils\DbgHeap.h" />
+    <ClInclude Include="HeapUtils\GObjBase.h" />
+    <ClInclude Include="HeapUtils\GuardObjs.h" />
+    <ClInclude Include="LocationVector.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MacroUtil.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="MemoryLeaks.h" />
+    <ClInclude Include="MersenneTwister.h" />
+    <ClInclude Include="Network\CircularBuffer.h" />
+    <ClInclude Include="Network\ListenSocketFreeBSD.h" />
+    <ClInclude Include="Network\ListenSocketLinux.h" />
+    <ClInclude Include="Network\ListenSocketPoll.h" />
+    <ClInclude Include="Network\ListenSocketSelect.h" />
+    <ClInclude Include="Network\ListenSocketWin32.h" />
+    <ClInclude Include="Network\Network.h" />
+    <ClInclude Include="Network\Socket.h" />
+    <ClInclude Include="Network\SocketDefines.h" />
+    <ClInclude Include="Network\SocketMgrFreeBSD.h" />
+    <ClInclude Include="Network\SocketMgrLinux.h" />
+    <ClInclude Include="Network\SocketMgrPoll.h" />
+    <ClInclude Include="Network\SocketMgrSelect.h" />
+    <ClInclude Include="Network\SocketMgrWin32.h" />
+    <ClInclude Include="Network\SocketOps.h" />
+    <ClInclude Include="New-Bytebuffer.h" />
+    <ClInclude Include="NGLog.h" />
+    <ClInclude Include="PacketLog.h" />
+    <ClInclude Include="PreallocatedQueue.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SmartPointer.h" />
+    <ClInclude Include="StackBuffer.h" />
+    <ClInclude Include="StackWalker.h" />
+    <ClInclude Include="Storage.h" />
+    <ClInclude Include="string_map.h" />
+    <ClInclude Include="Threading\Condition.h" />
+    <ClInclude Include="Threading\Guard.h" />
+    <ClInclude Include="Threading\LockedQueue.h" />
+    <ClInclude Include="Threading\Mutex.h" />
+    <ClInclude Include="Threading\Queue.h" />
+    <ClInclude Include="Threading\RWLock.h" />
+    <ClInclude Include="Threading\Threading.h" />
+    <ClInclude Include="Threading\ThreadPool.h" />
+    <ClInclude Include="Threading\ThreadStarter.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Util_Hash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AscentPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BufferPool.cpp" />
+    <ClCompile Include="CallBack.cpp" />
+    <ClCompile Include="Config\Config.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="CThreads.cpp" />
+    <ClCompile Include="Database\CreateInterface.cpp" />
+    <ClCompile Include="Database\Database.cpp" />
+    <ClCompile Include="Database\MySQLDatabase.cpp" />
+    <ClCompile Include="Database\PostgresDatabase.cpp" />
+    <ClCompile Include="Database\SQLiteDatabase.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="MemoryLeaks.cpp" />
+    <ClCompile Include="MersenneTwister.cpp" />
+    <ClCompile Include="Network\CircularBuffer.cpp" />
+    <ClCompile Include="Network\Socket.cpp" />
+    <ClCompile Include="Network\SocketFreeBSD.cpp" />
+    <ClCompile Include="Network\SocketLinux.cpp" />
+    <ClCompile Include="Network\SocketMgrFreeBSD.cpp" />
+    <ClCompile Include="Network\SocketMgrLinux.cpp" />
+    <ClCompile Include="Network\SocketMgrPoll.cpp" />
+    <ClCompile Include="Network\SocketMgrSelect.cpp" />
+    <ClCompile Include="Network\SocketMgrWin32.cpp" />
+    <ClCompile Include="Network\SocketOpsFreeBSD.cpp" />
+    <ClCompile Include="Network\SocketOpsLinux.cpp" />
+    <ClCompile Include="Network\SocketOpsPoll.cpp" />
+    <ClCompile Include="Network\SocketOpsSelect.cpp" />
+    <ClCompile Include="Network\SocketOpsWin32.cpp" />
+    <ClCompile Include="Network\SocketPoll.cpp" />
+    <ClCompile Include="Network\SocketSelect.cpp" />
+    <ClCompile Include="Network\SocketWin32.cpp" />
+    <ClCompile Include="NGLog.cpp" />
+    <ClCompile Include="PacketLog.cpp" />
+    <ClCompile Include="StackWalker.cpp" />
+    <ClCompile Include="Threading\Mutex.cpp" />
+    <ClCompile Include="Threading\ThreadPool.cpp" />
+    <ClCompile Include="Util.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
